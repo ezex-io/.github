@@ -1,0 +1,27 @@
+name: Testing (Go)
+permissions:
+  contents: read
+
+on:
+  workflow_call:
+    inputs:
+      go-version:
+        required: false
+        type: string
+        default: "1.25.5"
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: go
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Install Go
+        uses: actions/setup-go@v6
+        with:
+          go-version: ${{ inputs.go-version }}
