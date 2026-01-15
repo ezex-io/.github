@@ -11,7 +11,7 @@ on:
         default: "1.25.5"
 
 jobs:
-  testing:
+  setup-go:
     runs-on: ubuntu-latest
     defaults:
       run:
