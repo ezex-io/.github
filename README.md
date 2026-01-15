@@ -1,3 +1,0 @@
-# ezeX
-
-Hello World!
