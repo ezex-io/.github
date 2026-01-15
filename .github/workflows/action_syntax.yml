@@ -4,6 +4,7 @@ permissions:
   pull-requests: write
 
 on:
+  push:
   pull_request:
     paths:
     - '.github/workflows/*.yaml'
