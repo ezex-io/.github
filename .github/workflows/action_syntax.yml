@@ -9,6 +9,8 @@ on:
     paths:
     - '.github/workflows/*.yaml'
     - '.github/workflows/*.yml'
+    - '.github/actions/*.yaml'
+    - '.github/actions/*.yml'
 
 jobs:
   lint:
