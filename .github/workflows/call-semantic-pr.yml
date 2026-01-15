@@ -2,8 +2,7 @@ name: Semantic PR Validation
 permissions:
   pull-requests: write
 
-bad
-
+foo: bar
 
 on:
   workflow_call:

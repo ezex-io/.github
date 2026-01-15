@@ -7,7 +7,7 @@ inputs:
     required: false
     default: "1.25.5"
 
-bad
+foo: bar
 
 runs:
   using: composite
